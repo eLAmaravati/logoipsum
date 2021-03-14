@@ -1,0 +1,314 @@
+/*-------------------------------------------------------
+Project     : Loremipsum
+Author      : Langit Amaravati
+Description : Latihan Slicing
+Designer    : Flowbase
+Version     : 1.0.0
+License     : MIT
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Variabel
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Global CSS
+-------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/*-------------------------------------------------------
+Button
+-------------------------------------------------------*/
+.orange-btn {
+  font-size: 1.6rem;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: all 0.5s;
+  background-color: #FF7143;
+  border: 2px solid #FF7143;
+  color: #fff;
+}
+.orange-btn:hover {
+  color: #FF7143;
+  background-color: #fff;
+}
+
+.purple-btn {
+  font-size: 1.6rem;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: all 0.5s;
+  background-color: #5454D4;
+  border: 2px solid #5454D4;
+  color: #fff;
+}
+.purple-btn:hover {
+  color: #5454D4;
+  background-color: #fff;
+}
+.purple-btn .bi {
+  font-size: 1.5rem;
+}
+
+.grey-btn {
+  font-size: 1.6rem;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: all 0.5s;
+  background-color: #F7F7FB;
+}
+
+.more-btn {
+  padding: 0;
+  font-size: 1.7rem;
+  color: #5454D4;
+  font-weight: 700;
+}
+.more-btn .bi {
+  font-size: 1.7rem;
+}
+
+.white-btn {
+  font-size: 1.6rem;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: all 0.5s;
+  color: #5454D4;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+.white-btn:hover {
+  background-color: #5454D4;
+  color: #fff;
+}
+
+.card-btn {
+  font-size: 1.6rem;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: all 0.5s;
+  background-color: #E14817;
+}
+
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #dcdcf6;
+  color: #5454D4;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#topBtn:hover {
+  background-color: #5454D4;
+  color: #fff;
+}
+#topBtn .bi {
+  font-size: 2rem;
+}
+
+/*-------------------------------------------------------
+Navbar
+-------------------------------------------------------*/
+.navbar {
+  padding: 20px;
+}
+.navbar .nav-link {
+  font-size: 1.5rem;
+  margin: 0 20px;
+  font-weight: 500;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #5454D4 !important;
+}
+.navbar .nav-link:hover::after, .navbar .nav-link.active::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #5454D4;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+
+/*-------------------------------------------------------
+Hero Section
+-------------------------------------------------------*/
+.hero-section .site-title {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1em;
+  color: #19191B;
+  letter-spacing: -2.5px;
+}
+.hero-section .site-description {
+  font-size: 1.6rem;
+  color: #696871;
+  font-weight: 400;
+}
+
+/*-------------------------------------------------------
+Main Section
+-------------------------------------------------------*/
+main {
+  margin-top: 70px;
+}
+
+.section-header {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #19191B;
+  letter-spacing: -1.5px;
+}
+
+.pricing-heading {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #19191B;
+  letter-spacing: -1.5px;
+}
+
+.section-description,
+.card-text {
+  font-size: 1.6rem;
+  color: #696871;
+  font-weight: 400;
+}
+
+.index-section {
+  margin-top: 70px;
+}
+
+.benchmark-section {
+  margin-top: 100px;
+}
+.benchmark-section .card-title {
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.benchmark-section img {
+  width: 50%;
+  margin: auto;
+}
+
+/*-------------------------------------------------------
+Pricing Section
+-------------------------------------------------------*/
+.pricing-section {
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+.pricing-table {
+  margin-top: 50px;
+}
+.pricing-table .card {
+  background-color: #F8F8F8;
+  border-color: #F8F8F8;
+  border-radius: 5px;
+  text-align: center;
+  padding: 50px 20px;
+}
+.pricing-table .card.card-active {
+  background-color: #FF7143;
+}
+.pricing-table .card.card-active .card-title,
+.pricing-table .card.card-active .card-text {
+  color: #fff;
+}
+.pricing-table .card.card-active li {
+  color: #fff;
+}
+.pricing-table .card .card-body {
+  margin-bottom: 30px;
+}
+.pricing-table .card .card-text {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #19191B;
+}
+.pricing-table .card .card-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+.pricing-table .card .card-list li {
+  font-size: 1.2rem;
+  line-height: 3em;
+}
+.pricing-table .card .card-footer {
+  background-color: transparent;
+  border: none;
+}
+
+/*-------------------------------------------------------
+Footer
+-------------------------------------------------------*/
+footer {
+  margin-top: 100px;
+  padding-bottom: 30px;
+}
+footer .copyright {
+  font-size: 1.4rem;
+}
+footer .copyright a {
+  text-decoration: none;
+  color: #5454D4;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+footer .social-icon .bi {
+  padding: 0 20px;
+  font-size: 2rem;
+  color: #19191B;
+}
+
+/*-------------------------------------------------------
+Import
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Responsive
+-------------------------------------------------------*/
+@media (max-width: 576px) {
+  .hero-section {
+    margin-top: 50px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text .site-title {
+    font-size: 5rem;
+  }
+
+  .hero-image {
+    order: 1;
+  }
+
+  .metric-section,
+.index-section,
+.pricing-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .section-header,
+.pricing-heading {
+    font-size: 3.5rem;
+  }
+
+  .pricing-table .card {
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */

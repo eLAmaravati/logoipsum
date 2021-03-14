@@ -1,0 +1,144 @@
+/*-------------------------------------------------------
+Project     : Loremipsum
+Author      : Langit Amaravati
+Description : Latihan Slicing
+Designer    : Flowbase
+Version     : 1.0.0
+License     : MIT
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Variabel
+-------------------------------------------------------*/
+/*-------------------------------------------------------
+Global CSS
+-------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 10px;
+}
+
+body {
+	font-family: "DM Sans", sans-serif;
+}
+
+/*-------------------------------------------------------
+Button
+-------------------------------------------------------*/
+.orange-btn {
+	font-size: 1.6rem;
+	padding: 0.5em 1em;
+	border-radius: 10px;
+	transition: all 0.5s;
+	background-color: #FF7143;
+	border: 2px solid #FF7143;
+	color: #fff;
+}
+
+.orange-btn:hover {
+	color: #FF7143;
+	background-color: #fff;
+}
+
+.purple-btn {
+	font-size: 1.6rem;
+	padding: 0.5em 1em;
+	border-radius: 10px;
+	transition: all 0.5s;
+	background-color: #5454D4;
+	border: 2px solid #5454D4;
+	color: #fff;
+}
+
+.purple-btn:hover {
+	color: #5454D4;
+	background-color: #fff;
+}
+
+.purple-btn .bi {
+	font-size: 1.5rem;
+}
+
+.more-btn {
+	font-size: 1.7rem;
+	color: #5454D4;
+	font-weight: 700;
+}
+
+.more-btn .bi {
+	font-size: 1.7rem;
+}
+
+/*-------------------------------------------------------
+Navbar
+-------------------------------------------------------*/
+.navbar {
+	padding: 20px;
+}
+
+.navbar .nav-link {
+	font-size: 1.5rem;
+	margin: 0 20px;
+	font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+	color: #5454D4 !important;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link.active::after {
+	content: "";
+	display: block;
+	border-bottom: 3px solid #5454D4;
+	margin: auto;
+	padding-bottom: 5px;
+	margin-bottom: -8px;
+}
+
+/*-------------------------------------------------------
+Hero Section
+-------------------------------------------------------*/
+.hero-section .site-title {
+	font-size: 7rem;
+	font-weight: 700;
+	line-height: 1em;
+	color: #19191B;
+	letter-spacing: -2.5px;
+}
+
+.hero-section .site-description {
+	font-size: 1.6rem;
+	color: #696871;
+	font-weight: 400;
+}
+
+/*-------------------------------------------------------
+Main Section
+-------------------------------------------------------*/
+main {
+	margin-top: 70px;
+}
+
+.section-header {
+	font-size: 4rem;
+	font-weight: 700;
+	color: #19191B;
+	letter-spacing: -1.5px;
+}
+
+.section-description {
+	font-size: 1.6rem;
+	color: #696871;
+	font-weight: 400;
+}
+
+.index-section {
+	margin-top: 70px;
+}
+
+/*-------------------------------------------------------
+Import
+-------------------------------------------------------*/
+/*# sourceMappingURL=style.css.map */
